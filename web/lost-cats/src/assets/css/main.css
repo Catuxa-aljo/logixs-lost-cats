@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#00c9ff), to(#92fe9d));
+  background: linear-gradient(90deg, #00c9ff, #92fe9d);
+}
+
+header {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+header img {
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%) border-box;
+  max-width: 100px;
+}
+header h1 {
+  font-family: "Baloo Chettan 2", sans-serif;
+  text-transform: uppercase;
+}
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header li {
+  list-style: none;
+  margin: 0 2%;
+}
+
+.login {
+  margin: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+.login img {
+  width: 100%;
+  max-width: 300px;
+}
+.login input {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  padding: 5px;
+  margin: 2% 0;
+}
+.login h2 {
+  font-family: "Baloo Chettan 2", sans-serif;
+  text-transform: uppercase;
+}
+
+@media (max-width: 37.5em) {
+  .login {
+    margin: 5%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr;
+  }
+}

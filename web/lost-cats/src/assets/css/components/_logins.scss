@@ -1,0 +1,31 @@
+.login {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    @include headers($auxiliar-font);
+    img {
+        width: 100%;
+        max-width: 300px;
+    }
+    input {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        padding: 5px;
+        margin: 2% 0
+        
+    }
+    h2 {
+        @include headers($main-font)
+    }
+}
+
+@media (max-width: 37.5em) {
+    .login {
+        margin: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row: 1fr 1fr;
+    }
+}

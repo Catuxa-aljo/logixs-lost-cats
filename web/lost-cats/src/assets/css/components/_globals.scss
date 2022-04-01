@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: $gradient-color;
+}
+
+@mixin headers($font) {
+    @if $font == $main-font {
+        font-family: $main-font;
+        text-transform: uppercase;
+    } @else {
+        font-family: $auxiliar-font;  
+    }
+}

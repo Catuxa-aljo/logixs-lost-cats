@@ -1,0 +1,22 @@
+header {
+    color: $clear-color;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    img {
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%) border-box;
+        max-width: 100px;
+    }
+    h1 {
+        @include headers($main-font)
+    }   
+    ul {
+        display: flex;
+    }
+    li {
+        list-style: none;
+        margin: 0 2%;
+    }
+
+}
