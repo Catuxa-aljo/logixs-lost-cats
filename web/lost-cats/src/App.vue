@@ -2,6 +2,7 @@
 import Header from './components/header/Header.vue'
 import LoginForm from './components/form/Login.vue'
 import CatList from './components/cats/CatList.vue'
+
 </script>
 
 <template>
@@ -11,10 +12,10 @@ import CatList from './components/cats/CatList.vue'
   </header>
 
   <main>
-    <LoginForm />
+    <router-link to="/">Go to Home</router-link>
   </main>
   <div>
-    <CatList />
+    <router-view></router-view>    
   </div>
 </template>
 

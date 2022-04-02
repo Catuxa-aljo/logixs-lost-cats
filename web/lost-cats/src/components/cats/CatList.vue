@@ -10,4 +10,5 @@
   <Cat :data="cat" :index="index" />
 </div>
 
+
 </template>
