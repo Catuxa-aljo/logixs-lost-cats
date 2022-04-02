@@ -1,6 +1,7 @@
 <script setup>
 import Header from './components/header/Header.vue'
 import LoginForm from './components/form/Login.vue'
+import CatList from './components/cats/CatList.vue'
 </script>
 
 <template>
@@ -12,6 +13,9 @@ import LoginForm from './components/form/Login.vue'
   <main>
     <LoginForm />
   </main>
+  <div>
+    <CatList />
+  </div>
 </template>
 
 
