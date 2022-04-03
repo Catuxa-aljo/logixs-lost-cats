@@ -3,7 +3,8 @@
         font-family: $main-font;
         text-transform: uppercase;
     } @else {
-        font-family: $auxiliar-font;  
+        font-family: $auxiliar-font;
+        font-weight: 800;
     }
 }
 
@@ -21,3 +22,4 @@
     color: $light-color;
     transition-duration: 0.4s;
 }
+

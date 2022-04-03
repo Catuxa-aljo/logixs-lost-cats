@@ -12,9 +12,18 @@ main {
     max-width: 990px;
     margin: 0 auto;
     h1 {
-    @include headers($main-font);
     color: $secondary-color;
+    @include headers($main-font);
+
     }
+    h2 {
+        color: $primary-color;
+        @include headers($main-font);
+    }
+    p {
+        @include headers($auxiliar-font);
+    }
+    
 }
 header {
     display: flex;
@@ -33,5 +42,11 @@ header {
         max-width: 100px;
     }
     
+}
+
+@media (max-width: 998px) {
+    main {
+        padding: 5%;
+    }
 }
 

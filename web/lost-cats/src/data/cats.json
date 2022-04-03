@@ -4,7 +4,7 @@
         {
         "name" : "Timbal",
         "img" : "https://img.rasset.ie/0014f6bf-1600.jpg",
-        "description" : "Friendly orange cat with heart shaped fur stain. If you see him pick him, you will be able to handle him ",
+        "description" : "Friendly 10kg orange cat with heart shaped fur stain. If you see him pick him, you will be able to handle him but we aware that he is very talkative!",
         "date" : "16/01/2020",
         "id" : 1
 
@@ -12,7 +12,7 @@
         {
         "name" : "Te",
         "img" : "https://www.brightstarbuddies.com.au/blog/wp-content/uploads/sites/8/cobythecat.jpg",
-        "description" : "Turtle female cat, very shy. You can try to pick her as she is very tamed",
+        "description" : "Turtle female cat, very shy. Really a lady. She is small and have long hair, also is missing one tooth. You can try to pick her as she is very tamed",
         "date" : "20/03/2019",
         "id" : 2
 
@@ -23,6 +23,28 @@
         "description" : "Demon male cat. Don't try to touch him or pick him. He will probably bite and scratch you. Just call, we love him anyway!.",
         "date" : "10/07/2018",
         "id" : 3
+        },
+        {
+        "name" : "Bombo",
+        "img" : "https://static.onecms.io/wp-content/uploads/sites/23/2015/06/17/gettyimages-521187729-1.jpg",
+        "description" : "Cutest cat with black & white spots, but he must be very afraid. Try to coerce him with food or call better than try to pick him ",
+        "date" : "02/04/2018",
+        "id" : 4
+        },
+        {
+        "name" : "Kappa",
+        "img" : "https://i.pinimg.com/736x/db/49/e5/db49e5a8c83d897ecf966db2f9658b0b--batman-cat-batman-and-catwoman.jpg",
+        "description" : "Playful female black and white cat that looks exactly like Batman. Shes very friendly despite her angry look, so you probably can pick her",
+        "date" : "02/04/2018",
+        "id" : 5
+        },
+        {
+        "name" : "Mini Ozi",
+        "img" : "https://i0.wp.com/katzenworld.co.uk/wp-content/uploads/2019/06/funny-cat.jpeg?fit=1920%2C1920&ssl=1",
+        "description" : "Very small female cat, looks like a kitten although she is almost two years old. Might growl at you because she thinks she is a panter",
+        "date" : "01/08/2020",
+        "id" : 6
+
         }
     ] 
 }
