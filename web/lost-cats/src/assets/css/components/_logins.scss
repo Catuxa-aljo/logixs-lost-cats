@@ -1,7 +1,8 @@
 .login {
-    margin: 5%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 3fr;
+    margin: 5%;
+    grid-gap: 15px;
     align-items: center;
     @include headers($auxiliar-font);
     @include box;

@@ -1,7 +1,8 @@
 <script setup>
 import Header from './components/header/Header.vue'
-import LoginForm from './components/form/Login.vue'
+import LoginForm from './components/auth/Login.vue'
 import CatList from './components/cats/CatList.vue'
+import Footer from './components/misc/Footer.vue'
 
 </script>
 
@@ -14,9 +15,7 @@ import CatList from './components/cats/CatList.vue'
   <main>
      <router-view></router-view>    
   </main>
-  <div>
-   
-  </div>
+  <Footer />
 </template>
 
 

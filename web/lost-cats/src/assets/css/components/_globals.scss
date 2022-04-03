@@ -8,8 +8,16 @@ body {
     background: $gradient-color;
 }
 
+#app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 main {
+    flex-grow: 1;
     max-width: 990px;
+    padding-bottom: 2%;
     margin: 0 auto;
     h1 {
     color: $secondary-color;
@@ -25,11 +33,13 @@ main {
     }
     
 }
+
 header {
     display: flex;
     align-items: center;
     width: 100%;
     padding: 2%;
+    border-bottom: medium solid $light-color;
     color: $light-color;
     background-color: $primary-color;
     h1 {
@@ -42,6 +52,26 @@ header {
         max-width: 100px;
     }
     
+}
+
+footer {
+    bottom: 0;
+    padding: 2%;
+    border-top: medium solid $light-color;
+    background-color: $primary-color;
+    text-align: center;
+    color: $light-color;
+    @include headers($main-font);
+    h6 {
+        font-size: 1rem;
+    }
+    a, a:visited {
+        text-decoration: none;
+        color: $secondary-color;
+        :hover, :active {
+            color: #fff;
+        }
+    }
 }
 
 @media (max-width: 998px) {

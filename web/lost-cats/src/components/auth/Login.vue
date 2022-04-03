@@ -1,5 +1,5 @@
 <script setup>
-    import LoginForm from './Form.vue';
+    import LoginForm from '../form/Form.vue';
     import Logo from '../misc/Logo.vue';
     import service from '../../services/user.services.js';
     import { reactive } from "vue";
@@ -22,13 +22,12 @@
 
     function sendForm() {
         event.preventDefault(); 
-        if ( isFormValid()) {       
         service.login(login.email, login.password)
             .then(user => { 
             console.log(user);
             router.push({path: "/cats"} )})
             .catch(error => error)
-        }
+        
     }
 
 </script>
@@ -36,7 +35,7 @@
 <template>
     <div class="login">
         <div>
-            <Logo className="login" />
+            <Logo className=login />
         </div>
         <div class="form">
             <h1>The lost Cats</h1>

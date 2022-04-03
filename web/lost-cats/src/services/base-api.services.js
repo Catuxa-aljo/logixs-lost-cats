@@ -15,7 +15,7 @@ http.interceptors.response.use(function(response) {
             window.location.replace('/');
             break;
         case 403:
-            window.location.replace('/cats');
+            window.location.replace('/logout');
             break;
         case 404:
             window.location.replace('/404')        

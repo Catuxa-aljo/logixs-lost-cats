@@ -12,8 +12,23 @@ body {
   background: linear-gradient(90deg, #00c9ff, #92fe9d);
 }
 
+#app {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   max-width: 990px;
+  padding-bottom: 2%;
   margin: 0 auto;
 }
 main h1 {
@@ -40,6 +55,7 @@ header {
           align-items: center;
   width: 100%;
   padding: 2%;
+  border-bottom: medium solid #fff;
   color: #fff;
   background-color: #17252a;
 }
@@ -53,6 +69,27 @@ header img {
           clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%) border-box;
   max-width: 100px;
+}
+
+footer {
+  bottom: 0;
+  padding: 2%;
+  border-top: medium solid #fff;
+  background-color: #17252a;
+  text-align: center;
+  color: #fff;
+  font-family: "Baloo Chettan 2", sans-serif;
+  text-transform: uppercase;
+}
+footer h6 {
+  font-size: 1rem;
+}
+footer a, footer a:visited {
+  text-decoration: none;
+  color: #2B7A78;
+}
+footer a :hover, footer a :active, footer a:visited :hover, footer a:visited :active {
+  color: #fff;
 }
 
 @media (max-width: 998px) {
@@ -76,11 +113,12 @@ li {
 }
 
 .login {
-  margin: 5%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 2fr 15px 3fr;
+  grid-template-columns: 2fr 3fr;
+  margin: 5%;
+  grid-gap: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -113,6 +151,7 @@ li {
 }
 .form {
   padding: 5%;
+  text-align: center;
 }
 .form input {
   display: block;
@@ -146,12 +185,12 @@ li {
           align-items: center;
 }
 .form__input i {
+  border-radius: 5px 0 0 5px;
+  border: thin solid #2B7A78;
   padding: 13px;
   font-size: 1.2em;
   background-color: #2B7A78;
   color: #fff;
-  border-radius: 5px 0 0 5px;
-  border: thin solid #2B7A78;
 }
 
 @media (max-width: 37.5em) {
