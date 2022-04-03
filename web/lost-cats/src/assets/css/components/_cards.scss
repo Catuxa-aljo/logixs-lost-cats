@@ -1,0 +1,28 @@
+.card-deck {
+    display: grid;
+    &__item {
+        width: 300px;
+        margin: 5%;
+        @include box;
+        > div {
+            padding: 5%
+        }
+        h3 {
+            @include headers($main-font);
+            text-align: center;
+            color: $primary-color;
+        }
+        h4 {
+            text-align: center;
+            color: $secondary-color;
+            @include headers($auxiliar-font)
+        }
+        p {
+            padding-bottom: 5%;
+            border-bottom: solid thin $primary-color;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}

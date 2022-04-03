@@ -12,10 +12,10 @@ import CatList from './components/cats/CatList.vue'
   </header>
 
   <main>
-    <router-link to="/">Go to Home</router-link>
+     <router-view></router-view>    
   </main>
   <div>
-    <router-view></router-view>    
+   
   </div>
 </template>
 

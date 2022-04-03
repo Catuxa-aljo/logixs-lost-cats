@@ -5,8 +5,6 @@
     import { reactive } from "vue";
     import router from '../../main.js'
 
-    
-
     const login = reactive({
       email: null,
       password: null
@@ -20,10 +18,7 @@
       } else if (!password) {
         message= 'Insert your password'
       } 
-
     }
-
-    
 
     function sendForm() {
         event.preventDefault(); 
@@ -34,10 +29,7 @@
             router.push({path: "/cats"} )})
             .catch(error => error)
         }
-         
-        
     }
-
 
 </script>
 
@@ -46,7 +38,8 @@
         <div>
             <Logo className="login" />
         </div>
-        <div>
+        <div class="form">
+            <h1>The lost Cats</h1>
             <h2>Login</h2>
             <form v-on:submit="sendForm">
             <login-form     
@@ -54,7 +47,7 @@
                 v-model:password="login.password"
             />
             
-            <button type="submit" > Click </button>
+            <button type="submit" > LOGIN </button>
             </form>
         </div>
     </div>

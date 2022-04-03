@@ -12,11 +12,14 @@
 </script>
 
 <template>
-    <div key = index >
-        <img v-bind:src="data.img" />
-        <h3>{{ data.name }}</h3>
-        <p>{{ data.description }}</p>
-        <h4>{{ data.date }}</h4>
+    <div key= index class="card-deck__item" >
+        <img v-bind:src="data.img" :alt="data.name" />
+        <div>
+            <h3>{{ data.name }}</h3>
+            <h4>Description</h4>
+            <p>{{ data.description }}</p>
+            <h4>Lost at: {{ data.date }}</h4>
+        </div>
     </div>
 </template>
 

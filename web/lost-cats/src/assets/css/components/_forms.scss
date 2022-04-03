@@ -1,0 +1,44 @@
+.form {
+    padding: 5%;
+    input {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        padding: 15px;
+        margin: 2% 0;
+        border: thin solid $secondary-color;
+ 
+    }
+    h1 {
+        @include headers($main-font)
+    }
+    button {
+        @include button;
+        &:hover {
+            background-color: $secondary-color;
+        }
+    }
+    &__input {
+        display: flex;
+        align-items: center;
+        i {
+            padding: 13px;
+            font-size: 1.2em;
+            background-color: $secondary-color;
+            color: #fff;
+            border-radius: 5px 0 0 5px; 
+            border: thin solid $secondary-color;  
+        }
+    }
+   
+}
+
+@media (max-width: 37.5em) {
+.form {
+    button {
+        width: 100%;
+        padding: 5%;
+        margin: 5% 0;
+    }
+}
+}

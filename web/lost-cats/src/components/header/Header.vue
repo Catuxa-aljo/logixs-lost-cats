@@ -4,7 +4,8 @@
 </script>
 
 <template>
-        <Logo />
+    
+    <a href="/"><Logo className=header__logo /></a>
         <h1>Lost Cats</h1>
         <NavBar />
 </template>

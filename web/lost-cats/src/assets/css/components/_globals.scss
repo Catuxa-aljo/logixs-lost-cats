@@ -8,11 +8,30 @@ body {
     background: $gradient-color;
 }
 
-@mixin headers($font) {
-    @if $font == $main-font {
-        font-family: $main-font;
-        text-transform: uppercase;
-    } @else {
-        font-family: $auxiliar-font;  
+main {
+    max-width: 990px;
+    margin: 0 auto;
+    h1 {
+    @include headers($main-font);
+    color: $secondary-color;
     }
 }
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+    color: $light-color;
+    background-color: $primary-color;
+    h1 {
+        @include headers($main-font);
+        margin-left: 5%;
+    } 
+    img {
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%) border-box;
+        max-width: 100px;
+    }
+    
+}
+

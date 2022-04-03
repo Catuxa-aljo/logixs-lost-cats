@@ -8,6 +8,5 @@
 </script>
 
 <template>
-    <h2> {{ className }} </h2>
-    <img src="../../assets/img/grumpy.png" alt="Lost Cats" />
+    <img src="../../assets/img/grumpy.png" alt="Lost Cats" :class="className" />
 </template>

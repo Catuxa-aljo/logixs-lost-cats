@@ -1,17 +1,6 @@
-header {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    color: $clear-color;
-    background-color: $primary-color;
-    img {
-        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-        shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%) border-box;
-        max-width: 100px;
-    }
-    h1 {
-        @include headers($main-font)
-    }   
+    nav {
+        margin-left: 2%;
+    }  
     ul {
         display: flex;
     }
@@ -20,4 +9,4 @@ header {
         margin: 0 2%;
     }
 
-}
+

@@ -1,0 +1,23 @@
+@mixin headers($font) {
+    @if $font == $main-font {
+        font-family: $main-font;
+        text-transform: uppercase;
+    } @else {
+        font-family: $auxiliar-font;  
+    }
+}
+
+@mixin box {
+    border-radius: 15px;
+    box-shadow: 0px 20px 33px 0px rgba(23,37,42,0.5);
+    color: $primary-color;
+    background-color: $light-color;
+}
+
+@mixin button {
+    padding: 3%;
+    border-radius: 5px;
+    background-color: $primary-color;
+    color: $light-color;
+    transition-duration: 0.4s;
+}

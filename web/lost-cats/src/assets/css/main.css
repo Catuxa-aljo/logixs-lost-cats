@@ -12,6 +12,16 @@ body {
   background: linear-gradient(90deg, #00c9ff, #92fe9d);
 }
 
+main {
+  max-width: 990px;
+  margin: 0 auto;
+}
+main h1 {
+  font-family: "Baloo Chettan 2", sans-serif;
+  text-transform: uppercase;
+  color: #2B7A78;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,8 +30,14 @@ header {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  padding: 2%;
   color: #fff;
-  background-color: #17252A;
+  background-color: #17252a;
+}
+header h1 {
+  font-family: "Baloo Chettan 2", sans-serif;
+  text-transform: uppercase;
+  margin-left: 5%;
 }
 header img {
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
@@ -29,16 +45,18 @@ header img {
   shape-outside: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%) border-box;
   max-width: 100px;
 }
-header h1 {
-  font-family: "Baloo Chettan 2", sans-serif;
-  text-transform: uppercase;
+
+nav {
+  margin-left: 2%;
 }
-header ul {
+
+ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-header li {
+
+li {
   list-style: none;
   margin: 0 2%;
 }
@@ -53,21 +71,15 @@ header li {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Raleway", sans-serif;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 20px 33px 0px rgba(23, 37, 42, 0.5);
+          box-shadow: 0px 20px 33px 0px rgba(23, 37, 42, 0.5);
+  color: #17252a;
+  background-color: #fff;
 }
 .login img {
   width: 100%;
   max-width: 300px;
-}
-.login input {
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  padding: 5px;
-  margin: 2% 0;
-}
-.login h2 {
-  font-family: "Baloo Chettan 2", sans-serif;
-  text-transform: uppercase;
 }
 
 @media (max-width: 37.5em) {
@@ -79,4 +91,92 @@ header li {
     grid-template-columns: 1fr;
     grid-row: 1fr 1fr;
   }
+  .login img {
+    width: 90%;
+    max-width: 800px;
+  }
+}
+.form {
+  padding: 5%;
+}
+.form input {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  margin: 2% 0;
+  border: thin solid #2B7A78;
+}
+.form h1 {
+  font-family: "Baloo Chettan 2", sans-serif;
+  text-transform: uppercase;
+}
+.form button {
+  padding: 3%;
+  border-radius: 5px;
+  background-color: #17252a;
+  color: #fff;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+.form button:hover {
+  background-color: #2B7A78;
+}
+.form__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form__input i {
+  padding: 13px;
+  font-size: 1.2em;
+  background-color: #2B7A78;
+  color: #fff;
+  border-radius: 5px 0 0 5px;
+  border: thin solid #2B7A78;
+}
+
+@media (max-width: 37.5em) {
+  .form button {
+    width: 100%;
+    padding: 5%;
+    margin: 5% 0;
+  }
+}
+.card-deck {
+  display: -ms-grid;
+  display: grid;
+}
+.card-deck__item {
+  width: 300px;
+  margin: 5%;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 20px 33px 0px rgba(23, 37, 42, 0.5);
+          box-shadow: 0px 20px 33px 0px rgba(23, 37, 42, 0.5);
+  color: #17252a;
+  background-color: #fff;
+}
+.card-deck__item > div {
+  padding: 5%;
+}
+.card-deck__item h3 {
+  font-family: "Baloo Chettan 2", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #17252a;
+}
+.card-deck__item h4 {
+  text-align: center;
+  color: #2B7A78;
+  font-family: "Raleway", sans-serif;
+}
+.card-deck__item p {
+  padding-bottom: 5%;
+  border-bottom: solid thin #17252a;
+}
+.card-deck__item img {
+  width: 100%;
 }
