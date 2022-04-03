@@ -5,16 +5,35 @@
     import { reactive } from "vue";
     import router from '../../main.js'
 
+    
+
     const login = reactive({
-      email: '',
-      password: ''
-    })
+      email: null,
+      password: null
+    });
+
+    let message = 'holi';
+
+    function isFormValid () {
+      if (!login.email) {
+        message= 'Insert your password'
+      } else if (!password) {
+        message= 'Insert your password'
+      } 
+
+    }
+
+    
 
     function sendForm() {
         event.preventDefault(); 
+        if ( isFormValid()) {       
         service.login(login.email, login.password)
-            .then(user => console.log(user))
-         //router.push({path: "/cats"})
+            .then(user => { 
+            console.log(user);
+            router.push({path: "/cats"} )})
+            .catch(error => error)
+        }
          
         
     }
@@ -34,13 +53,10 @@
                 v-model:email="login.email"
                 v-model:password="login.password"
             />
+            
             <button type="submit" > Click </button>
             </form>
         </div>
-    </div>
-
-    <div>
-  {{ login }}
     </div>
 </template>
 

@@ -3,25 +3,25 @@
     [
         {
         "name" : "Timbal",
-        "img" : "source",
-        "description" : "",
-        "date" : "",
+        "img" : "https://img.rasset.ie/0014f6bf-1600.jpg",
+        "description" : "Friendly orange cat with heart shaped fur stain. If you see him pick him, you will be able to handle him ",
+        "date" : "16/01/2020",
         "id" : 1
 
         },
         {
         "name" : "Te",
-        "img" : "source",
-        "description" : "",
-        "date" : "",
+        "img" : "https://www.brightstarbuddies.com.au/blog/wp-content/uploads/sites/8/cobythecat.jpg",
+        "description" : "Turtle female cat, very shy. You can try to pick her as she is very tamed",
+        "date" : "20/03/2019",
         "id" : 2
 
         },
         {
         "name" : "Lolo",
-        "img" : "source",
-        "description" : "",
-        "date" : "",
+        "img" : "https://www.maxpixel.net/static/photo/1x/Evil-Pet-Cat-Black-2841413.jpg",
+        "description" : "Demon male cat. Don't try to touch him or pick him. He will probably bite and scratch you. Just call, we love him anyway!.",
+        "date" : "10/07/2018",
         "id" : 3
         }
     ] 

@@ -13,9 +13,10 @@
 
 <template>
     <div key = index >
+        <img v-bind:src="data.img" />
         <h3>{{ data.name }}</h3>
-        <p>Cat description</p>
-        <h4>Lost data</h4>
+        <p>{{ data.description }}</p>
+        <h4>{{ data.date }}</h4>
     </div>
 </template>
 

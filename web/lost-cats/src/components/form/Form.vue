@@ -36,7 +36,6 @@
             name="email" 
             :value="email"
             @input="$emit('update:email', $event.target.value)"
-            required
         />
         <input 
             type="password" 

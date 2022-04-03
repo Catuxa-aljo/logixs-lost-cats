@@ -11,7 +11,6 @@ const router = createRouter({
         { path: '/cats', 
         component: Cats,
         meta: { requiresAuth: true } },
-        { path: '/login', component: Login }
     ]
 });
 
