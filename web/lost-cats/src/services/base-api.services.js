@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const http = axios.create({
-    baseURL: 'http://localhost:3001/api',
+    baseURL: 'http://localhost:3001/api/',
     withCredentials: true
 })
 
@@ -15,7 +15,7 @@ http.interceptors.response.use(function(response) {
             window.location.replace('/');
             break;
         case 403:
-            window.location.replace('/403');
+            window.location.replace('/cats');
             break;
         case 404:
             window.location.replace('/404')        

@@ -1,4 +1,7 @@
 <script setup>  
+
+      import service from '../../services/user.services.js';
+
    defineProps({
             genre: {
                 type: String,
@@ -13,10 +16,20 @@
                 default: ''
             }
        })
+
+      function sendForm() {
+        event.preventDefault(); 
+        console.log(props.email)
+        //service.login(email, password)
+         //   .then(user => console.log(user))
+         //router.push({path: "/cats"})
+         
+        
+    }
 </script>
 
 <template>
-    <form method="post" action="">
+    
         <input 
             type="text" 
             placeholder="Insert your email" 
@@ -32,6 +45,6 @@
             @input="$emit('update:password', $event.target.value)"
             required
             />
-        <button type="submit"> Send </button>
-    </form>
+        
+   
 </template>

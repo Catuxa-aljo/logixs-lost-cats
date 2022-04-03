@@ -8,10 +8,15 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         { path: '/', component: Login },
-        { path: '/cats', component: Cats }
+        { path: '/cats', 
+        component: Cats,
+        meta: { requiresAuth: true } },
+        { path: '/login', component: Login }
     ]
 });
 
 const app = createApp(App)
 app.use(router)
 app.mount('#app')
+
+export default router
